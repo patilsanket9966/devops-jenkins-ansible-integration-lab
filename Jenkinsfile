@@ -23,7 +23,7 @@ pipeline {
                  
              
                
-               sh "ansible-playbook main.yml -i inventories/dev/hosts --user jenkins"
+               sh "ansible-playbook main.yml -i inventories/dev/hosts --user ec2-user"
 
                
             
