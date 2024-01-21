@@ -2,8 +2,8 @@ pipeline {
     agent any
      
     stages {
-
-    stage('Ansible Init') {
+         
+          stage('Ansible Init') {
             steps {
                 script {
                 
