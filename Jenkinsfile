@@ -2,17 +2,8 @@ pipeline {
     agent any
      
     stages {
-      stage('checkout') {
-           steps {
-             
-                git branch: 'master', url: 'https://github.com/devops4solutions/Ansible-Sample-Application-Deployment.git'
-             
-          }
-        }
-        
-        
-        
-          stage('Ansible Init') {
+
+    stage('Ansible Init') {
             steps {
                 script {
                 
